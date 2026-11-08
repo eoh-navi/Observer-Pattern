@@ -1,5 +1,3 @@
-package news.subscription;
-
 public class ConcreteSubscriber implements Subscriber {
     private final String subscriberName;
 
@@ -9,7 +7,7 @@ public class ConcreteSubscriber implements Subscriber {
 
     @Override
     public void update(String news) {
-        System.out.println("[" + subscriberName + "] Received Breaking News Alert: " + news);
+        System.out.println("[" + subscriberName + "] Received a News Alert: " + news);
     }
 
     public String getSubscriberName() {
